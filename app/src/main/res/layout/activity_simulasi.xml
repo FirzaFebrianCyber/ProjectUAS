@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#F9FAFB">
 
     <LinearLayout
         android:id="@+id/full_width_header_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#539BFA"
+        android:background="#3B82F6"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingTop="20dp"
-        android:paddingBottom="19dp"
+        android:paddingBottom="20dp"
+        android:elevation="6dp"
         android:gravity="center_vertical">
 
         <ImageButton
@@ -26,7 +26,8 @@
             android:background="@android:color/transparent"
             android:contentDescription="Back"
             android:src="@drawable/ic_arrow_back"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+            android:tint="#FFFFFF"
+            tools:ignore="HardcodedText,UseAppTint,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:ignore="HardcodedText,TextContrastCheck" />
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <ScrollView
@@ -46,80 +47,129 @@
         android:fillViewport="true">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:padding="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
 
             <EditText
                 android:id="@+id/inputSpecies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Species (angka label, contoh: 1)"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3B82F6"
+                android:hint="Species (cth: 1)"
                 android:inputType="number"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/inputLength1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3B82F6"
                 android:hint="Length1 (cm)"
                 android:inputType="numberDecimal"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/inputLength2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3B82F6"
                 android:hint="Length2 (cm)"
                 android:inputType="numberDecimal"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/inputLength3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3B82F6"
                 android:hint="Length3 (cm)"
                 android:inputType="numberDecimal"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/inputHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3B82F6"
                 android:hint="Height (cm)"
                 android:inputType="numberDecimal"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/inputWidth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3B82F6"
                 android:hint="Width (cm)"
                 android:inputType="numberDecimal"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/inputFeature7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Fitur ke-7 (misal: Diagonal, cm)"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#3B82F6"
+                android:hint="Fitur ke-7 (Diagonal)"
                 android:inputType="numberDecimal"
-                android:minHeight="60dp"
+                android:minHeight="56dp"
+                android:padding="12dp"
+                android:textColor="#111827"
+                android:textColorHint="#9CA3AF"
+                android:textSize="16sp"
                 tools:ignore="Autofill,HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
 
             <Button
                 android:id="@+id/btnPrediksi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#2563EB"
                 android:text="Prediksi Berat"
-                android:layout_marginTop="16dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:padding="14dp"
+                android:elevation="4dp"
+                android:layout_marginBottom="24dp"
                 tools:ignore="HardcodedText,VisualLintButtonSize" />
 
             <TextView
@@ -127,10 +177,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hasil prediksi akan muncul di sini"
-                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textColor="#1F2937"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#333333"
+                android:padding="8dp"
+                android:background="#E0F2FE"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
     </ScrollView>

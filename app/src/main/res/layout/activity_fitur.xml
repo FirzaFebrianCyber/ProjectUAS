@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#F9FAFB">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,12 +15,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#539BFA"
+            android:background="#3B82F6"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingTop="20dp"
-            android:paddingBottom="19dp"
-            android:gravity="center_vertical">
+            android:paddingBottom="20dp"
+            android:gravity="center_vertical"
+            android:elevation="6dp">
 
             <ImageButton
                 android:id="@+id/backButton"
@@ -30,7 +31,7 @@
                 android:contentDescription="Back"
                 android:src="@drawable/ic_arrow_back"
                 android:tint="#FFFFFF"
-                tools:ignore="HardcodedText,ImageContrastCheck,TouchTargetSizeCheck,UseAppTint" />
+                tools:ignore="HardcodedText,UseAppTint,TouchTargetSizeCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,7 +41,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText,TextContrastCheck" />
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,30 +54,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:background="#FFFFFF"
-                android:layout_marginTop="16dp"
-                android:elevation="2dp">
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp"
+                android:backgroundTint="#FFFFFF">
 
-                <TextView android:text="1). Species"
+                <TextView
+                    android:text="1). Species"
                     android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textColor="#1F2937"
+                    android:textSize="18sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Tipe Data: Kategorikal (label numerik)"
-                    android:textSize="20sp"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="Tipe Data: Kategorikal (label numerik)"
+                    android:textSize="16sp"
+                    android:textColor="#374151"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Jenis ikan dalam dataset dikodekan secara numerik. Setiap angka merepresentasikan satu jenis ikan, misalnya Bream, Roach, atau Pike."
-                    android:textSize="20sp"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="Jenis ikan dalam dataset dikodekan secara numerik. Setiap angka merepresentasikan satu jenis ikan seperti Bream, Roach, atau Pike."
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -86,30 +91,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:background="#FFFFFF"
-                android:layout_marginTop="12dp"
-                android:elevation="2dp">
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
 
-                <TextView android:text="2). Length1"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="2). Length1"
+                    android:textColor="#1F2937"
                     android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Tipe Data: Float"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
+                <TextView
+                    android:text="Tipe Data: Float"
+                    android:textColor="#374151"
+                    android:textSize="16sp"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Panjang horizontal pertama ikan (dari kepala ke pangkal ekor). Sering kali digunakan sebagai estimasi awal ukuran ikan."
-                    android:textSize="20sp"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="Panjang horizontal pertama ikan (dari kepala ke pangkal ekor). Digunakan sebagai estimasi awal ukuran ikan."
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
@@ -119,96 +127,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:background="#FFFFFF"
-                android:layout_marginTop="12dp"
-                android:elevation="2dp">
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
 
-                <TextView android:text="3). Length2"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="3). Length2"
+                    android:textColor="#1F2937"
                     android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Tipe Data: Float"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
+                <TextView
+                    android:text="Tipe Data: Float"
+                    android:textColor="#374151"
+                    android:textSize="16sp"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Panjang kedua, biasanya diukur dari ujung mulut hingga ke bagian tengah ekor. Memberikan gambaran lebih detail ukuran tubuh ikan."
-                    android:textSize="20sp"
-                    android:textColor="#000000"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="12dp"
-                android:background="#FFFFFF"
-                android:layout_marginTop="12dp"
-                android:elevation="2dp">
-
-                <TextView android:text="4). Length3"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="HardcodedText" />
-
-                <TextView android:text="Tipe Data: Float"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="HardcodedText" />
-
-                <TextView android:text="Panjang penuh ikan dari ujung mulut hingga ujung ekor. Ini adalah ukuran total yang sangat berpengaruh dalam prediksi berat."
-                    android:textSize="20sp"
-                    android:textColor="#000000"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp"
-                android:background="#FFFFFF"
-                android:layout_marginTop="12dp"
-                android:elevation="2dp">
-
-                <TextView android:text="5). Height"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="HardcodedText" />
-
-                <TextView android:text="Tipe Data: Float"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="4dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:ignore="HardcodedText" />
-
-                <TextView android:text="Tinggi maksimal tubuh ikan dari perut hingga punggung. Merupakan faktor penting dalam perhitungan volume tubuh."
-                    android:textSize="20sp"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="Panjang kedua, biasanya dari ujung mulut ke tengah ekor. Memberi gambaran lebih detail ukuran ikan."
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
@@ -218,36 +163,110 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="12dp"
+                android:padding="16dp"
                 android:background="#FFFFFF"
-                android:layout_marginTop="12dp"
-                android:elevation="2dp">
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
 
-                <TextView android:text="6). Width"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="4). Length3"
+                    android:textColor="#1F2937"
                     android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Tipe Data: Float"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
+                <TextView
+                    android:text="Tipe Data: Float"
+                    android:textColor="#374151"
+                    android:textSize="16sp"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
-                <TextView android:text="Lebar samping tubuh ikan. Bersama dengan tinggi dan panjang, digunakan untuk mengestimasi berat melalui model regresi."
-                    android:textSize="20sp"
-                    android:textColor="#000000"
+                <TextView
+                    android:text="Panjang penuh ikan dari mulut ke ujung ekor. Ukuran total sangat mempengaruhi prediksi berat."
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:text="5). Height"
+                    android:textColor="#1F2937"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Tipe Data: Float"
+                    android:textColor="#374151"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Tinggi maksimal tubuh ikan dari perut ke punggung. Faktor penting untuk estimasi volume tubuh."
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <TextView
+                    android:text="6). Width"
+                    android:textColor="#1F2937"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Tipe Data: Float"
+                    android:textColor="#374151"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Lebar tubuh ikan. Digunakan bersama panjang dan tinggi untuk menghitung berat melalui model regresi."
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
             </LinearLayout>
 
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>

@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF7FA">
+    android:background="#F6F8FB">
 
     <LinearLayout
         android:id="@+id/full_width_header_container_model"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#539BFA"
+        android:background="#3B82F6"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingTop="20dp"
-        android:paddingBottom="19dp"
+        android:paddingBottom="20dp"
+        android:elevation="6dp"
         android:gravity="center_vertical">
 
         <ImageButton
@@ -27,7 +29,7 @@
             android:contentDescription="Back"
             android:src="@drawable/ic_arrow_back"
             android:tint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck,UseAppTint,ImageContrastCheck" />
+            tools:ignore="HardcodedText,UseAppTint,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,9 +37,9 @@
             android:layout_marginStart="12dp"
             android:text="MODEL"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            tools:ignore="HardcodedText,TextContrastCheck" />
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <ScrollView
@@ -55,189 +57,213 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="Model Prediksi Berat Ikan (ANN Regresi)"
                 android:textSize="20sp"
-                android:textColor="#000000"
                 android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="12dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Model ini merupakan model regresi yang digunakan untuk memprediksi berat ikan berdasarkan fitur numerik seperti panjang, tinggi, dan lebar tubuh ikan. Model ini dilatih menggunakan dataset nyata dan diubah ke dalam format TensorFlow Lite (.tflite) agar bisa dijalankan langsung di perangkat Android."
-                android:textSize="20sp"
-                android:layout_marginTop="4dp"
-                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="6dp"
                 tools:ignore="HardcodedText,VisualLintLongText" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Model Machine Learning"
-                android:textSize="25sp"
-                android:textColor="#000000"
+                android:layout_marginTop="24dp"
+                android:text="1). Memisahkan Data"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#1F2937"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Preprocessing Data"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:text="Data akan dipisahkan dari fitur yang disimpan di variabel X dan label di variabel y."
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="4dp"
                 tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/model_datapisah_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/data_pisah"
+                    android:contentDescription="Diagram Pisah Data"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="1). Memisahkan Data"
-                android:textSize="20sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="data akan dipisahkan dari fitur yang di simpan di variabel x dan label di variabel y"
-                android:textSize="20sp"
-                android:textColor="#000000"
-                tools:ignore="HardcodedText" />
-            <ImageView
-                android:id="@+id/model_datapisah_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/data_pisah"
-                android:contentDescription="Diagram Arsitektur Model"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                tools:ignore="HardcodedText"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="2). Normalisasi Data"
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginTop="20dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Semua fitur numerik dinormalisasi agar memiliki skala yang seragam."
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:layout_marginTop="4dp"
                 tools:ignore="HardcodedText" />
-            <ImageView
-                android:id="@+id/model_normalisasi_image"
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/normalisasi_data"
-                android:contentDescription="Diagram Arsitektur Model"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                tools:ignore="HardcodedText"/>
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/model_normalisasi_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/normalisasi_data"
+                    android:contentDescription="Normalisasi Data"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="3). Data Transform"
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginTop="20dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Label 'Species' dikonversi ke bentuk numerik jika digunakan."
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:layout_marginTop="4dp"
                 tools:ignore="HardcodedText" />
-            <ImageView
-                android:id="@+id/model_encoder_image"
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/encod"
-                android:contentDescription="Diagram Arsitektur Model"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                tools:ignore="HardcodedText"/>
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/model_encoder_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/encod"
+                    android:contentDescription="Data Transform"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="Modeling"
-                android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginTop="20dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Model ini adalah jaringan saraf tiruan feedforward (data mengalir satu arah) dengan arsitektur sebagai berikut: \nInput Layer Menerima input dengan jumlah fitur yang sama dengan X_train.shape[1].
-                            \n\nA). Hidden Layer 1: Lapisan dense dengan 512 neuron dan aktivasi ReLU.
-                            \n\nB). Hidden Layer 2: Lapisan dense dengan 256 neuron dan aktivasi ReLU.
-                            \n\nC). Hidden Layer 3: Lapisan dense dengan 128 neuron dan aktivasi ReLU.
-                            \n\nD). Hidden Layer 4: Lapisan dense dengan 64 neuron dan aktivasi ReLU.
-                            \n\nE). Output Layer: Lapisan dense dengan 1 neuron (tanpa fungsi aktivasi eksplisit, cocok untuk ANN Regresi)."
-                android:textSize="20sp"
-                android:textColor="#000000"
-                tools:ignore="HardcodedText,VisualLintLongText" />
+                android:text="Model ini adalah jaringan saraf tiruan feedforward (data mengalir satu arah) dengan arsitektur sebagai berikut:\n\nA). Hidden Layer 1: 512 neuron, aktivasi ReLU.\n\nB). Hidden Layer 2: 256 neuron, aktivasi ReLU.\n\nC). Hidden Layer 3: 128 neuron, aktivasi ReLU.\n\nD). Hidden Layer 4: 64 neuron, aktivasi ReLU.\n\nE). Output Layer: 1 neuron, regresi."
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText" />
 
-            <ImageView
-                android:id="@+id/model_architecture_image"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/arsitektur"
-                android:contentDescription="Diagram Arsitektur Model"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                tools:ignore="HardcodedText"/>
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/model_architecture_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arsitektur"
+                    android:contentDescription="Arsitektur Model"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="Evaluasi Model"
-                android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#1F2937"
+                android:layout_marginTop="20dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Model dievaluasi menggunakan Mean Squared Error (MSE) dan R2 Score. Model menunjukkan performa yang baik dalam memprediksi berat ikan berdasarkan input yang diberikan."
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:text="Model dievaluasi menggunakan Mean Squared Error (MSE) dan R² Score. Hasil menunjukkan model dapat memprediksi berat ikan dengan performa yang baik."
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:layout_marginTop="4dp"
                 tools:ignore="HardcodedText,VisualLintLongText" />
-            <ImageView
-                android:id="@+id/model_akurasi_image"
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/akurasi_data"
-                android:contentDescription="Diagram Arsitektur Model"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                tools:ignore="HardcodedText"/>
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp">
 
+                <ImageView
+                    android:id="@+id/model_akurasi_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/akurasi_data"
+                    android:contentDescription="Evaluasi Model"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

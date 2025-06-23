@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#F9FAFB">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,12 +15,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#539BFA"
+            android:background="#3B82F6"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingTop="20dp"
-            android:paddingBottom="19dp"
-            android:gravity="center_vertical">
+            android:paddingBottom="20dp"
+            android:gravity="center_vertical"
+            android:elevation="6dp">
 
             <ImageButton
                 android:id="@+id/backButton"
@@ -30,7 +31,7 @@
                 android:contentDescription="Back"
                 android:src="@drawable/ic_arrow_back"
                 android:tint="#FFFFFF"
-                tools:ignore="HardcodedText,TouchTargetSizeCheck,UseAppTint,ImageContrastCheck" />
+                tools:ignore="HardcodedText,UseAppTint,TouchTargetSizeCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -40,76 +41,86 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText,TextContrastCheck" />
+                tools:ignore="HardcodedText" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:background="#FFFFFF">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="\nDeskripsi Aplikasi\n"
+                android:text="Deskripsi Aplikasi"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="#000000"
+                android:textColor="#111827"
+                android:layout_marginBottom="8dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Aplikasi ini dirancang untuk memprediksi berat ikan berdasarkan parameter morfologi seperti panjang, tinggi, lebar, dan jenis ikan. Aplikasi ini menggunakan model machine learning dalam format TensorFlow Lite (.tflite) yang telah dilatih sebelumnya untuk memberikan estimasi berat secara cepat dan akurat.\n\nModel ini cocok digunakan dalam konteks perikanan, pengolahan ikan, hingga logistik, di mana estimasi berat ikan penting untuk klasifikasi, harga, atau pengemasan."
-                android:textColor="#000000"
-                android:textSize="20sp"
+                android:text="Aplikasi ini dirancang untuk memprediksi berat ikan berdasarkan parameter morfologi seperti panjang, tinggi, lebar, dan jenis ikan. Menggunakan model machine learning TensorFlow Lite (.tflite) yang dilatih sebelumnya, aplikasi ini mampu memberikan estimasi berat ikan secara cepat dan akurat."
+                android:textColor="#374151"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp"
                 tools:ignore="HardcodedText,VisualLintLongText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="\nInformasi Dataset\n"
+                android:text="Informasi Dataset"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="#000000"
+                android:textColor="#111827"
+                android:layout_marginBottom="8dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Dataset yang digunakan berisi berbagai spesies ikan serta ukuran-ukuran morfologinya seperti Length1, Length2, Length3, Height, dan Width. Setiap data dilabeli dengan berat aktual dari ikan tersebut, sehingga dapat digunakan untuk melatih model regresi prediktif.\n\nDataset ini umumnya digunakan dalam studi-studi mengenai prediksi berat berdasarkan bentuk tubuh ikan."
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:text="Dataset berisi berbagai spesies ikan serta ukuran morfologinya seperti Length1, Length2, Length3, Height, dan Width. Setiap entri dilengkapi dengan label berat aktual untuk melatih model regresi prediktif."
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp"
                 tools:ignore="HardcodedText,VisualLintLongText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="\nCara Kerja Aplikasi\n"
+                android:text="Cara Kerja Aplikasi"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="#000000"
+                android:textColor="#111827"
+                android:layout_marginBottom="8dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pengguna mengisi nilai input seperti panjang ikan (dalam 3 dimensi), tinggi, lebar, dan jenis ikan (dalam bentuk numerik label). Nilai-nilai ini kemudian diproses oleh model .tflite untuk menghasilkan estimasi berat ikan secara real-time.\n\nPrediksi ditampilkan dalam satuan gram untuk memudahkan interpretasi dan keperluan praktis."
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:text="Pengguna mengisi input panjang (dalam 3 dimensi), tinggi, lebar, dan label jenis ikan. Input ini diproses oleh model .tflite untuk menghasilkan prediksi berat ikan dalam satuan gram secara real-time."
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="20dp"
                 tools:ignore="HardcodedText,VisualLintLongText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="\nMade by Firza Febrian"
+                android:text="Made by Firza Febrian"
                 android:textStyle="italic"
-                android:textSize="20sp"
-                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textColor="#6B7280"
+                android:layout_gravity="end"
                 android:layout_marginTop="12dp"
                 tools:ignore="HardcodedText" />
-
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
