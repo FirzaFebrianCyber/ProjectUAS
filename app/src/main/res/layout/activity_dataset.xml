@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/full_width_header_container_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#539BFA"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="19dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="#FFFFFF"
+                tools:ignore="HardcodedText,ImageContrastCheck,TouchTargetSizeCheck,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="DATASET"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nDeskripsi Dataset\n"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dataset ini berisi data morfometrik dari berbagai jenis ikan untuk tujuan memprediksi beratnya. Dataset terdiri dari beberapa fitur seperti panjang, tinggi, dan lebar tubuh ikan, serta informasi tentang jenis ikan (Species)."
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nFitur yang digunakan:\n• Species (kategori)\n• Length1, Length2, Length3 (panjang)\n• Height (tinggi)\n• Width (lebar)\n"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="Sumber Dataset: https://www.kaggle.com/datasets/sushantbmujagule/fish-weight-prediction-dataset"
+                android:textSize="16sp"
+                android:textColor="#1E88E5"
+                android:layout_marginBottom="8dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contoh Data"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:padding="4dp">
+
+                    <TableRow>
+                        <TextView style="@style/TableHeader" android:text="Species"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableHeader" android:text="Length1"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableHeader" android:text="Length2"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableHeader" android:text="Length3"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableHeader" android:text="Height"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableHeader" android:text="Width"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableHeader" android:text="Weight"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView style="@style/TableCell" android:text="Roach"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="23.2"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="25.4"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="30.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="11.52"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="4.02"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="242.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView style="@style/TableCell" android:text="Bream"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="24.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="26.3"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="31.2"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="12.48"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="4.30"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="290.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView style="@style/TableCell" android:text="Whitefish"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="22.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="24.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="27.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="10.45"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="3.52"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="200.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView style="@style/TableCell" android:text="Parkki"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="30.5"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="33.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="37.5"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="14.60"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="5.10"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="430.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView style="@style/TableCell" android:text="Perch"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="18.7"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="20.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="22.5"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="7.80"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="2.75"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                        <TextView style="@style/TableCell" android:text="120.0"
+                            tools:ignore="HardcodedText"
+                            android:textColor="#000000"/>
+                    </TableRow>
+
+
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

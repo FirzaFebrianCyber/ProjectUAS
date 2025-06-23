@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/full_width_header_container_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#539BFA"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="19dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="#FFFFFF"
+                tools:ignore="HardcodedText,TouchTargetSizeCheck,UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="TENTANG APLIKASI"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nDeskripsi Aplikasi\n"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi ini dirancang untuk memprediksi berat ikan berdasarkan parameter morfologi seperti panjang, tinggi, lebar, dan jenis ikan. Aplikasi ini menggunakan model machine learning dalam format TensorFlow Lite (.tflite) yang telah dilatih sebelumnya untuk memberikan estimasi berat secara cepat dan akurat.\n\nModel ini cocok digunakan dalam konteks perikanan, pengolahan ikan, hingga logistik, di mana estimasi berat ikan penting untuk klasifikasi, harga, atau pengemasan."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nInformasi Dataset\n"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dataset yang digunakan berisi berbagai spesies ikan serta ukuran-ukuran morfologinya seperti Length1, Length2, Length3, Height, dan Width. Setiap data dilabeli dengan berat aktual dari ikan tersebut, sehingga dapat digunakan untuk melatih model regresi prediktif.\n\nDataset ini umumnya digunakan dalam studi-studi mengenai prediksi berat berdasarkan bentuk tubuh ikan."
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,VisualLintLongText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\nCara Kerja Aplikasi\n"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengguna mengisi nilai input seperti panjang ikan (dalam 3 dimensi), tinggi, lebar, dan jenis ikan (dalam bentuk numerik label). Nilai-nilai ini kemudian diproses oleh model .tflite untuk menghasilkan estimasi berat ikan secara real-time.\n\nPrediksi ditampilkan dalam satuan gram untuk memudahkan interpretasi dan keperluan praktis."
+                android:textSize="20sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\nMade by Firza Febrian"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginTop="12dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

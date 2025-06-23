@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF7FA"
+    android:padding="24dp">
+
+    <!-- Logo di tengah -->
+
+    <!-- Judul -->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="289dp"
+        android:layout_height="297dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="Logo"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_channel" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APLIKASI PREDIKSI BERAT IKAN"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="60dp" />
+
+    <!-- Tombol Mulai -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#539BFA"
+        android:elevation="7dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="31dp"
+        android:text="Mulai Aplikasi"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
