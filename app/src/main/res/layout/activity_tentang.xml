@@ -30,7 +30,7 @@
                 android:contentDescription="Back"
                 android:src="@drawable/ic_arrow_back"
                 android:tint="#FFFFFF"
-                tools:ignore="HardcodedText,TouchTargetSizeCheck,UseAppTint" />
+                tools:ignore="HardcodedText,TouchTargetSizeCheck,UseAppTint,ImageContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
                 android:text="Pengguna mengisi nilai input seperti panjang ikan (dalam 3 dimensi), tinggi, lebar, dan jenis ikan (dalam bentuk numerik label). Nilai-nilai ini kemudian diproses oleh model .tflite untuk menghasilkan estimasi berat ikan secara real-time.\n\nPrediksi ditampilkan dalam satuan gram untuk memudahkan interpretasi dan keperluan praktis."
                 android:textSize="20sp"
                 android:textColor="#000000"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText,VisualLintLongText" />
 
             <TextView
                 android:layout_width="wrap_content"

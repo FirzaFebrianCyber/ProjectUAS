@@ -17,12 +17,11 @@ class SplashActivity : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.activity_splash)
 
-        // Pindah ke MainActivity setelah animasi selesai
         val lottieAnimationView = findViewById<LottieAnimationView>(R.id.lottieAnimationView)
         lottieAnimationView.addAnimatorListener(object : AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: Animator) {
                 super.onAnimationEnd(animation)
-                val intent = Intent(this@SplashActivity, MainActivity::class.java)
+                val intent = Intent(this@SplashActivity, LandingActivity::class.java)
                 startActivity(intent)
                 finish()
             }

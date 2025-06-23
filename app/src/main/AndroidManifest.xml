@@ -27,7 +27,7 @@
         </activity>
 
         <activity
-            android:name=".TentangActivity"
+            android:name=".ui.TentangActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -35,7 +35,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".DatasetActivity"
+            android:name=".ui.DatasetActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -43,7 +43,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".FiturActivity"
+            android:name=".ui.FiturActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -51,7 +51,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".SimulasiActivity"
+            android:name=".ui.SimulasiActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -59,7 +59,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".ModelActivity"
+            android:name=".ui.ModelActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
